@@ -22,6 +22,7 @@ $light-blue: #6AE9FF;
 $dark-tan: #B25C15;
 $light-tan: #FFA051;
 $black: #000000;
+  $white: #FFFFFF;
 
 
 html, body {
@@ -46,7 +47,7 @@ a {
   height: 100%;
   background: $light-blue;
   padding: 7em 0 0 0;
-  border-right: 1px solid #d6dce0;
+  border-right: 1px solid $dark-blue  ;
   #logo {
     width: 40px;
     position: absolute;
@@ -85,21 +86,21 @@ a {
     right: 3em;
     top: 80%;
     font-size: .8em;
-    color: #9eafba;
+    color: $white;
   }
 }
 
 .button {
   outline: none;
   background: transparent;
-  border: 1px solid #d6dce0;
+  border: 1px solid $light-blue;
   padding: .5em 1.5em;
   border-radius: 1.5em;
   &:hover {
     border: 1px solid #33acb7;
-    color: #33acb7;
+    color: $white;
     a {
-      color: #33acb7 !important;
+      color: $white !important;
     }
   }
 }
@@ -116,14 +117,14 @@ a {
   margin-left: 250px;
   #header {
     padding: 1em 3em;
-    border-bottom: 1px solid #d6dce0;
+    border-bottom: 1px solid $light-blue;
     background: $dark-blue;
-    color: #000000;
+    color: $light-tan;
     p {
       display: inline;
     }
     a {
-      color: #9eafba;
+      color: $light-tan;
       text-decoration: none;
     }
     .buttons {
@@ -137,13 +138,13 @@ a {
   }
   .post_wrapper {
     padding: 3em;
-    border-bottom: 1px solid #d6dce0;
+    border-bottom: 1px solid $white;
     .title {
       margin: 0;
       a {
         font-weight: 500;
         text-decoration: none;
-        color: #2a2f35;
+        color: $white;
         font-size: 1.5em;
         &:hover {
           color: #51E5FF;
@@ -151,7 +152,7 @@ a {
       }
     }
     .date_and_author {
-      color: #9eafba;
+      color: $white;
       margin: .5em 0 0 0;
     }
   }
@@ -160,7 +161,7 @@ a {
     .title {
       font-weight: 500;
       text-decoration: none;
-      color: #2a2f35;
+      color: $white;
       font-size: 2.5em;
       margin-bottom: 0;
     }
@@ -169,20 +170,20 @@ a {
       line-height: 1.75;
     }
     .date_and_author {
-      color: #9eafba;
+      color: $white;
       margin: .5em 0 2em 0;
     }
     #comments {
       h2 {
         margin: 3em 0 1em 0;
-        border-bottom: 1px solid #d6dce0;
+        border-bottom: 1px solid $light-blue;
         padding-bottom: 0.5em;
       }
       h3 {
         margin-top: 2em;
       }
       .comment {
-        border-bottom: 1px solid #d6dce0;
+        border-bottom: 1px solid $light-blue;
         padding: 1.5em 2em;
         .clear_both {
           clear: both;
@@ -235,7 +236,7 @@ a {
         line-height: 1.75;
       }
       a {
-        color: #33acb7;
+        color: $white;
         font-weight: 700;
         text-decoration: none;
       }
@@ -246,7 +247,7 @@ a {
   }
   input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 90%;
-    border: 1px solid #d6dce0;
+    border: 1px solid #d6dce0 ;
     border-radius: .35em;
     margin-top: 10px;
     padding: .5em 1em;
